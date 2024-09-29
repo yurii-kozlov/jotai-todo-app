@@ -1,6 +1,6 @@
-import { Todo } from "./types";
+import { Todo } from "../types";
 
-export const updateTodo = (todos: Todo[], id: number, text: string): Todo[] =>
+export const renameTodo = (todos: Todo[], id: number, text: string): Todo[] =>
   todos.map((todo) => ({
     ...todo,
     text: todo.id === id ? text : todo.text,

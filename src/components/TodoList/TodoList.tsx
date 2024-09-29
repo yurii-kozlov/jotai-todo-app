@@ -1,9 +1,12 @@
+'use client'
+
 import { Heading } from "@chakra-ui/react";
 import { TodoListItem } from "./TodoListItem";
-import { Todo } from "@/types";
+import { useAtomValue } from "jotai";
+import { filteredBySearchTodosAtom } from "@/store/todo";
 
 export const TodoList = () => {
-  const todos: Todo[] = [];
+  const todos = useAtomValue(filteredBySearchTodosAtom);
 
   return (
     <>
