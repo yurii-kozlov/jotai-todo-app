@@ -1,16 +1,17 @@
-'use client'
+"use client";
 
-import { ChakraProvider, theme } from "@chakra-ui/react"
-import { FC, ReactElement, ReactNode } from "react"
+import { ChakraProvider, theme } from "@chakra-ui/react";
+import { Provider as JotaiProvider } from "jotai";
+import { FC, ReactElement, ReactNode } from "react";
 
 interface ProvidersProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 export const Providers: FC<ProvidersProps> = ({ children }): ReactElement => {
   return (
     <ChakraProvider theme={theme}>
-      {children}
+      <JotaiProvider>{children}</JotaiProvider>
     </ChakraProvider>
-  )
-}
+  );
+};
