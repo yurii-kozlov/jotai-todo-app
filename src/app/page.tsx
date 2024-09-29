@@ -4,6 +4,7 @@ import { TodoList } from "@/components/TodoList";
 import { TodoAdd } from "@/components/TodoAdd";
 import { TodoSearch } from "@/components/TodoSearch";
 import { InformationBar } from "@/components/InformationBar";
+import { UsersList } from "@/components/UsersList";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         <TodoAdd />
         <TodoSearch />
         <InformationBar />
+        <Box mt={10}>
+          <UsersList />
+        </Box>
       </Box>
       </main>
     </div>

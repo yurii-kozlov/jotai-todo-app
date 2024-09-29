@@ -1,6 +1,7 @@
-import { InformationBar, Todo } from "@/types";
 import { atom } from "jotai";
 import { addTodo, removeTodo, toggleTodo, renameTodo } from "./store";
+import { InformationBar } from "@/types/informationBar";
+import { Todo } from "@/types/todo";
 
 export const newTodoAtom = atom<string>('');
 export const todosAtom = atom<Todo[]>([]);

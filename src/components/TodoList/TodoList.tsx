@@ -3,7 +3,7 @@
 import { Heading } from "@chakra-ui/react";
 import { TodoListItem } from "./TodoListItem";
 import { useAtomValue } from "jotai";
-import { filteredBySearchTodosAtom, todosAtom } from "@/store/todo";
+import { filteredBySearchTodosAtom } from "@/store/todo";
 
 export const TodoList = () => {
   const todos = useAtomValue(filteredBySearchTodosAtom);

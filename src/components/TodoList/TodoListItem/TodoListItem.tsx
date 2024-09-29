@@ -1,10 +1,11 @@
 'use client';
 
 import { Button, Input, Flex, Checkbox } from "@chakra-ui/react";
-import { Todo } from "@/types";
+
 import { ChangeEvent, FC } from "react";
 import { useSetAtom } from "jotai";
 import { removeTodoAtom, renameTodoAtom, toggleTodoAtom } from "@/store/todo";
+import { Todo } from "@/types/todo";
 
 interface TodoListItemProps {
   todo: Todo;
