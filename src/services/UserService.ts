@@ -7,7 +7,6 @@ class UserService {
 
   public async getUsers(): Promise<User[]> {
     try {
-      console.log(this.apiUrl)
       const response = await fetch(`${this.apiUrl}/users`);
       const users = await response.json();
 

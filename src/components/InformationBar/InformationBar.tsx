@@ -7,8 +7,6 @@ import { useAtomValue } from "jotai";
 export const InformationBar = () => {
   const { totalTodosCount, foundTodosCount } = useAtomValue(informationBarAtom);
 
-  console.log(totalTodosCount)
-
   return (
     <Flex gap={10} pt={2}>
       <Text>Total todos: {totalTodosCount}</Text>
